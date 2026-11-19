@@ -17,6 +17,21 @@ public class HotDog {
         toppings = "";
         price = 99;
     }
+    for (int k = 2; k <= toppingsList.length-1; k++) {
+        for (int i = 0; i <= toppingsList.length-1; i++){
+            for (int j = i; j <= toppingsList.length-(k+1); j++) {
+                toppings = toppings + toppingsList[j + k];
+                price = price + priceList[j + k];
+                System.out.println(counter + " Dog in Bun with" + toppings +" $" + 0.01*price);
+                counter++;  
+        }
+        toppings = "";
+        price = 99;
+    }
+    }
+
+
+/* 
     System.out.println("------------------------------------------------------------------------------");
     for (int i = 0; i <= toppingsList.length-1; i++){
         for (int j = i; j <= toppingsList.length-3; j++) {
@@ -63,6 +78,18 @@ public class HotDog {
         toppings = "";
         price = 99;
     }
+    System.out.println("------------------------------------------------------------------------------");
+    for (int i = 0; i <= toppingsList.length-1; i++){
+        for (int j = i; j <= toppingsList.length-7; j++) {
+            toppings = toppings + toppingsList[j] + toppingsList[j + 6];
+            price = price + priceList[j + 6];
+            System.out.println(counter + " Dog in Bun with" + toppings +" $" + 0.01*price);
+            counter++;  
+        }
+        toppings = "";
+        price = 99;
+
+    } */
 return counter++;
 }
    
