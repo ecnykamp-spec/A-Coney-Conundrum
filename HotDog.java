@@ -9,7 +9,6 @@ public class HotDog {
     int counter = 1;
     for (int i = 0; i <= toppingsList.length-1; i++){
         for (int j = i; j <= toppingsList.length-1; j++) {
-            System.out.println(i);
             toppings = toppings + toppingsList[j];
             price = price + priceList[j];
             System.out.println(counter + " Dog in Bun with" + toppings +" $" + 0.01*price);
@@ -18,7 +17,52 @@ public class HotDog {
         toppings = "";
         price = 99;
     }
+    System.out.println("------------------------------------------------------------------------------");
+    for (int i = 0; i <= toppingsList.length-1; i++){
+        for (int j = i; j <= toppingsList.length-3; j++) {
+            toppings = toppings + toppingsList[j] + toppingsList[j + 2];
+            price = price + priceList[j + 2];
+            System.out.println(counter + " Dog in Bun with" + toppings +" $" + 0.01*price);
+            counter++;  
+        }
+        toppings = "";
+        price = 99;
+    }
 
+        System.out.println("------------------------------------------------------------------------------");
+    for (int i = 0; i <= toppingsList.length-1; i++){
+        for (int j = i; j <= toppingsList.length-4; j++) {
+            toppings = toppings + toppingsList[j] + toppingsList[j + 3];
+            price = price + priceList[j + 3];
+            System.out.println(counter + " Dog in Bun with" + toppings +" $" + 0.01*price);
+            counter++;  
+        }
+        toppings = "";
+        price = 99;
+        
+    }
+            System.out.println("------------------------------------------------------------------------------");
+    for (int i = 0; i <= toppingsList.length-1; i++){
+        for (int j = i; j <= toppingsList.length-5; j++) {
+            toppings = toppings + toppingsList[j] + toppingsList[j + 4];
+            price = price + priceList[j + 4];
+            System.out.println(counter + " Dog in Bun with" + toppings +" $" + 0.01*price);
+            counter++;  
+        }
+        toppings = "";
+        price = 99;
+    }
+                System.out.println("------------------------------------------------------------------------------");
+    for (int i = 0; i <= toppingsList.length-1; i++){
+        for (int j = i; j <= toppingsList.length-6; j++) {
+            toppings = toppings + toppingsList[j] + toppingsList[j + 5];
+            price = price + priceList[j + 5];
+            System.out.println(counter + " Dog in Bun with" + toppings +" $" + 0.01*price);
+            counter++;  
+        }
+        toppings = "";
+        price = 99;
+    }
 return counter++;
 }
    
