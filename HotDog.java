@@ -7,26 +7,18 @@ public class HotDog {
     String toppings = "";
     int price = 99;
     int counter = 1;
-   System.out.println("0 Dog in Bun");
-    for (int i = 0; i <= toppingsList.length-1; i++) {
-         //toppings = toppings + toppingsList[i];
-        price = price + priceList[i];
-        System.out.println(counter + " Dog in Bun with" + toppingsList[i] +" $" + 0.01*price);
-        counter++;  
+    for (int i = 0; i <= toppingsList.length-1; i++){
+        for (int j = i; j <= toppingsList.length-1; j++) {
+            System.out.println(i);
+            toppings = toppings + toppingsList[j];
+            price = price + priceList[j];
+            System.out.println(counter + " Dog in Bun with" + toppings +" $" + 0.01*price);
+            counter++;  
+        }
+        toppings = "";
+        price = 99;
     }
-        for (int i = 0; i <= toppingsList.length-1; i++) {
-         toppings = toppings + toppingsList[i];
-        price = price + priceList[i];
-        System.out.println(counter + " Dog in Bun with" + toppings +" $" + 0.01*price);
-        counter++;  
-    }
-      System.out.println("-----------------------------------");
-        for (int i = 1; i <= toppingsList.length-1; i++) {
-        toppings = toppings + toppingsList[Math.abs(i-toppingsList.length)];
-        price = price + priceList[Math.abs(i-toppingsList.length)];
-        System.out.println(counter + " Dog in Bun with" + toppings +" $" + 0.01*price);
-        counter++;  
-    }
+
 return counter++;
 }
    
